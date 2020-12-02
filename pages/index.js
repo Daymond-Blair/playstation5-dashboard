@@ -1,65 +1,115 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+// import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+    <div className="screen">
+    {/*HEADER*/}
+      <header>
+        <section className="media-nav">
+          <a href="#" className="active">
+            Games
           </a>
+          <a href="#" className="">Media</a>
+        </section>
+        <section className="settings">
+          <span className="icon">
+            <i className="fa fa-search">
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+            </i>
+          </span>
+          <span className="icon">
+            <i className="fa fa-cog">
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+            </i>
+          </span>
+          <span className="icon">
+            <img className="user" src="https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=ddcb7ec744fc63472f2d9e19362aa387"/>
+          </span>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
+          <span className="time">4:20 PM</span>
+        </section>
+      </header>
+      {/* BODY */}
+      <div className="container">
+        <section className="game-nav">
+          <div className="game active">
+            <i className="fa fa-location-arrow"></i>
+          </div>
+          <div className="game">
+            <div className="img"
+            style={{
+              background: "url('https://i.redd.it/8pvdi0pne8a51.png')",
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              transform: "scale(1.5)",
+            }}></div>
+          </div>
+          <div className="game">
+            <div className="img"
+            style={{
+              background: "url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420086cv11a.jpg;maxHeight=640;maxWidth=550')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              transform: "scale(1.5)",
+            }}></div>
+          </div>
+          <div className="game">
+            <div className="img"
+            style={{
+              background: "url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6438/6438717_sd.jpg;maxHeight=640;maxWidth=550')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              transform: "scale(1.5)",
+            }}></div>
+          </div>
+          <div className="game">
+            <div className="img"
+            style={{
+              background: "url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6442/6442231_sd.jpg;maxHeight=640;maxWidth=550')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              transform: "scale(1.5)",
+            }}></div>
+          </div>
+          <div className="game">
+            <div className="img"
+            style={{
+              background: "url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6430/6430152_sd.jpg;maxHeight=640;maxWidth=550')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              transform: "scale(1.5)",
+            }}></div>
+          </div>
+          <div className="game">
+            <div className="img"
+            style={{
+              background: "url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426004_sd.jpg;maxHeight=640;maxWidth=550')",
+              backgroundSize: "cover ",
+              backgroundPosition: "center",
+              transform: "scale(1.5)",
+            }}></div>
+          </div>
+          <div className="game">
+            <div className="img"
+            style={{
+              background: "url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6427/6427993cv11d.jpg;maxHeight=640;maxWidth=550')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              transform: "scale(1.5)",
+            }}></div>
+          </div>
+        </section>
+        <section className="info">
+            <span className="sub-title">
+              Official new from Playstation | 12/15/2020
+            </span>
+            <h1>Ready for a PS5 Adventure?</h1>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              ASTRO'S PLAYROOM is pre-loaded and waiting for you! Explore the new capabilities of PS5 and feel the world...
             </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+        </section>
+      </div>
     </div>
   )
 }
