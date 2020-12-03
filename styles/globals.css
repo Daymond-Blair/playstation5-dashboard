@@ -127,3 +127,86 @@ header .settings .time{
   height: 100px;
   background-size: cover;
 }
+
+.info {
+  width: 50%;
+  margin-bottom: 3rem;
+}
+
+.info .sub-title{
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #8f97aa;
+}
+
+.info h1{
+  font-size: 2.6rem;
+  font-weight: 300;
+  color: white;
+}
+
+.info p{
+  font-size: 2rem;
+  font-weight: 300;
+  color: #8f97aa;
+}
+
+.video-trailers{
+  white-space: nowrap;
+  overflow-x: scroll;
+  padding-left: 5%;
+}
+
+.video-trailers .trailer{
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  width: 350px;
+  height: 200px;
+  background: linear-gradient(60deg, rgba(16,25,37,1) 0%, rgba(0,0,1) 50%, rgba(16,25,37,1) 100%);
+  opacity: 1;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.video-trailers .trailer:hover .image{
+  position: absolute;
+  display: inline-block;
+  opacity: 1;
+}
+
+.video-trailers .trailer .image{
+  opacity: .5;
+  transition: opacity .4s ease-in-out;
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.video-trailers .trailer .video-info{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  padding: 1rem;
+}
+
+.video-trailers .trailer .video-info .circle-player{
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.video-trailers .trailer .video-info .circle-player .fa{
+  
+}
+
+.video-trailers .trailer .video-info .circle-player .fa-play{
+  
+}
